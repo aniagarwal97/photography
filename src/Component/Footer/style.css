@@ -1,0 +1,27 @@
+.footer{
+    padding: 20px;
+}
+
+.footer .logo{
+    display: inline-block;
+    margin-left: 67px;
+}
+
+.footer .social-icons{
+    vertical-align: bottom;
+    float: right;
+    margin-right: 230px;
+}
+
+.footer .social-icons ul{
+    list-style: none;
+}
+
+.footer .social-icons ul li{
+    display: inline;
+    margin: 15px;
+}
+
+.footer .social-icons ul li a{
+    color: grey;
+}

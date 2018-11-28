@@ -1,0 +1,9 @@
+.profile{
+    padding: 10px;
+}
+
+.profile .about{
+    margin-left: 20px;
+    text-align: center;
+    /* width: 60%; */
+}

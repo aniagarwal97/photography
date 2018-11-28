@@ -1,0 +1,37 @@
+.header{
+    padding: 25px;
+}
+
+.header .logo{
+    margin-left: 60px;
+    display: inline-block;
+}
+
+.header .navbar{
+    vertical-align: bottom;
+    float: right;
+    margin-right: 120px;
+    margin-top: 30px;
+}
+
+.header .navbar .menu li{
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    font-size: 13px;
+}
+
+.header .navbar .menu li a{
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header .navbar .menu li a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1,1);
+    transition: 0.3s;
+}
+
+.active{
+    text-decoration: underline;
+}
