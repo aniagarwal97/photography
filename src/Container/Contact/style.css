@@ -11,6 +11,7 @@
     padding-top: 18px;
     padding-left: 18px;
     text-decoration: underline;
+    color: white;
 }
 
 .input-name, .input-email, .input-subject, .input-message{
@@ -23,13 +24,13 @@
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     border: 1px solid #80808082;
-    color: black;
+    color: white;
 }
 
 .form-submit{
     padding: 10px 25px;
-    background:black;
-    color: white;
+    background:white;
+    color: black;
     border: 0;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;

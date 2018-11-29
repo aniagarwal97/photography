@@ -9,7 +9,7 @@ export default class Image extends Component {
     }
     render() {
         return (
-            <div className="white-bg image-container" onClick={() => { this.handleCategoryClick(this.props.category) }}>
+            <div className="black-bg image-container" onClick={() => { this.handleCategoryClick(this.props.category) }}>
                 <img className="image-class" alt={this.props.name} src={this.props.source} />
                 <div className="caption">
                     <p style={{ margin: 0, padding: 10 }}>{this.props.name}</p>

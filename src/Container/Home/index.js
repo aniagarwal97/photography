@@ -40,9 +40,15 @@ export default class Home extends Component {
       rewind: this.state.rewind,
       autoplay: this.state.autoplay
     };
-
+    // #181f12
     return (
       <div className="home boxed-layout" >
+      <div style={{color: 'white', fontSize: 30, fontWeight: 'bold'}}>
+      Our World is So Beautiful
+      </div>
+      <div>
+        <img style={{width: '100%'}} src="https://1stwebdesigner.com/wp-content/uploads/2016/01/slideme-jQuery-slider.jpg"></img>
+      </div>
         <div >
           <OwlCarousel
             ref="car"

@@ -3,9 +3,9 @@ import './style.css'
 export default class Footer extends Component {
 	render() {
 		return (
-			<footer className="footer white-bg">
+			<footer className="footer black-bg">
 				<div className="logo">
-					<img alt="Logo" src={require("../../logo.png")} style={{ width: 55 }} />
+					<img alt="Logo" src={require("../../logo.png")} style={{ width: 135 }} />
 				</div>
 				<div className="social-icons">
 					<ul>

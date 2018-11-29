@@ -83,7 +83,7 @@ export default class Header extends Component {
     render() {
         return (
             <div>
-                <header className="header white-bg">
+                <header className="header black-bg">
                     <div className="logo">
                     <Link to="/" ><img alt="Logo" src={require("../../logo.png")} style={{ width: 135 }} /></Link>
                     </div>

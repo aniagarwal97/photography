@@ -4,13 +4,16 @@ import './style.css';
 export default class Profile extends Component {
     render() {
         return (
-            <div className="white-bg boxed-layout profile">
+            <div className="black-bg boxed-layout profile">
+                <div style={{ color: 'white', fontSize: 30, fontWeight: 'bold', textAlign:'center' }}>
+                    Our World is So Beautiful
+                </div>
                 {/* <div style={{ display: 'flex' }}> */}
                 <div style={{ textAlign: 'center' }}>
                     <img src={require('../../profile.jpg')} alt="Meeli Loite Sonn" style={{ border: '5px solid black' }} />
                 </div>
                 <div className="about">
-                    <h1 style={{marginBottom: 0}}>Meeli Loite Sonn</h1>
+                    <h1 style={{ marginBottom: 0 }}>Meeli Loite Sonn</h1>
                     <span><strong>(Photographer)</strong></span>
                     <h3>Hello, and welcome to OUR WORLD IS SO BEAUTIFUL Website!</h3>
                     <p>My name is Meeli Loite Sonn; I am of Estonian heritage.  Presently, I reside in Las Vegas, Nevada, USA.</p>
