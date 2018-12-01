@@ -40,7 +40,7 @@ export default class Contact extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        axios.get(`${API_BASE}/contact?name=${this.state.name}&email=${this.state.email}&subject=${this.state.subject}&message=${this.state.message}`)
+        axios.get(`${API_BASE}contact?name=${this.state.name}&email=${this.state.email}&subject=${this.state.subject}&message=${this.state.message}`)
             .then((response) => {
                 this.setState({
                     isFilled: true
