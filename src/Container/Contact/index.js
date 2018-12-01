@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './style.css';
 import axios from 'axios';
-
+import {API_BASE} from '../../Constant';
 export default class Contact extends Component {
     constructor() {
         super();
@@ -40,7 +40,7 @@ export default class Contact extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        axios.get(`http://localhost:8000/contact?name=${this.state.name}&email=${this.state.email}&subject=${this.state.subject}&message=${this.state.message}`)
+        axios.get(`${API_BASE}/contact?name=${this.state.name}&email=${this.state.email}&subject=${this.state.subject}&message=${this.state.message}`)
             .then((response) => {
                 this.setState({
                     isFilled: true

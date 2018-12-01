@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import './style.css'
+import './style.css';
+import {API_BASE} from '../../Constant';
 export default class CategoryImages extends Component {
   constructor() {
     super();
@@ -11,7 +12,7 @@ export default class CategoryImages extends Component {
 
   componentWillMount() {
     var category = localStorage.getItem('category') || 'Antilope';
-    axios.get('http://localhost:8000?category=' + category)
+    axios.get(API_BASE + '?category=' + category)
       .then((response) => {
         this.setState({
           image: response.data
