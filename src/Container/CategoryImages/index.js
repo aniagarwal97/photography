@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import './style.css';
 import { API_BASE } from '../../Constant';
-import { Link } from "react-router-dom";
 import FullScreenImage from '../../Component/FullScreenImage';
 export default class CategoryImages extends Component {
   constructor() {
@@ -37,18 +36,18 @@ export default class CategoryImages extends Component {
       return this.state.image.map((data, index) => {
         return (index % 3 === 0) ? (
           <div className="parent-div-image" key={index}>
-            <div onClick={()=>this.handleImageClick(atob(this.state.image[index].image))} key={index} to="/contact" style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}> <div className="black-bg ">
+            <div onClick={()=>this.handleImageClick(atob(this.state.image[index].image))} key={index} style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}> <div className="black-bg ">
               <div style={{ background: `url(${atob(this.state.image[index].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></div>
             </div></div>
             {(index + 1 < this.state.image.length) ?
-              (<div onClick={this.handleImageClick} key={index + 1} to="/contact" style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}><div className="black-bg">
+              (<div onClick={()=>this.handleImageClick(atob(this.state.image[index + 1].image))} key={index + 1} style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}><div className="black-bg">
                 <div style={{ background: `url(${atob(this.state.image[index + 1].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></div>
               </div></div>)
               :
               ('')
             }
             {(index + 2 < this.state.image.length) ?
-              (<div key={index + 2} to="/contact" style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}><div className="black-bg">
+              (<div onClick={()=>this.handleImageClick(atob(this.state.image[index + 2].image))} key={index + 2}  style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}><div className="black-bg">
                 <div style={{ background: `url(${atob(this.state.image[index + 2].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></div>
               </div></div>)
               :
