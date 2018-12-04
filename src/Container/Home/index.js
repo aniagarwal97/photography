@@ -48,7 +48,7 @@ export default class Home extends Component {
       </div>
                 <div style={{margin: 50}}>
                     <div style={{background: 'white', padding: 80}}>
-                        <img style={{ width: '100%' }} src={require('../../banner.jpg')}></img>
+                        <img alt="banner" style={{ width: '100%' }} src={require('../../banner.jpg')}/>
                     </div>
                 </div>
                 <div >
