@@ -24,7 +24,6 @@ export default class CategoryImages extends Component {
   }
 
   handleImageClick = (event) => {
-    console.log(event)
     this.setState({
       showFullScreen : true, 
       imageClicked: event
@@ -37,18 +36,18 @@ export default class CategoryImages extends Component {
         return (index % 3 === 0) ? (
           <div className="parent-div-image" key={index}>
             <div onClick={()=>this.handleImageClick(atob(this.state.image[index].image))} key={index} style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}> <div className="black-bg ">
-              <div style={{ background: `url(${atob(this.state.image[index].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></div>
+              <div style={{ background: `url(${atob(this.state.image[index].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', cursor: 'pointer' }}></div>
             </div></div>
             {(index + 1 < this.state.image.length) ?
               (<div onClick={()=>this.handleImageClick(atob(this.state.image[index + 1].image))} key={index + 1} style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}><div className="black-bg">
-                <div style={{ background: `url(${atob(this.state.image[index + 1].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></div>
+                <div style={{ background: `url(${atob(this.state.image[index + 1].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', cursor: 'pointer' }}></div>
               </div></div>)
               :
               ('')
             }
             {(index + 2 < this.state.image.length) ?
               (<div onClick={()=>this.handleImageClick(atob(this.state.image[index + 2].image))} key={index + 2}  style={{ width: '30%', margin: 10, padding: 10, background: 'black' }}><div className="black-bg">
-                <div style={{ background: `url(${atob(this.state.image[index + 2].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}></div>
+                <div style={{ background: `url(${atob(this.state.image[index + 2].image)})`, backgroundPosition: 'center center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', cursor: 'pointer' }}></div>
               </div></div>)
               :
               ('')
